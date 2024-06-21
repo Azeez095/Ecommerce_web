@@ -62,11 +62,22 @@ const Hero = () => {
                     <div className='flex flex-col justify-center 
                     gap-4 pt-12 sm:pt-0 text-center sm:text-left 
                     order-2 sm:order-1 relative z-10'>
-                        <h1 className="text-5xl sm:text-6xl
+                        <h1 
+                        data-aos="zoom-out"
+                        data-aos-duration="500"
+                        data-aos-once="true"
+                        className="text-5xl sm:text-6xl
                         lg:text-7xl font-bold">{data.title}</h1>
-                        <p className='text-sm'>{data.description}</p>
+                        <p 
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                        data-aos-delay="100"
+                        className='text-sm'>{data.description}</p>
                     
-                        <div>
+                        <div 
+                        data-aos="fade-up"
+                        data-aos-duration="500"
+                        data-aos-delay="300">
                             <button className='bg-gradient-to-r from-primary
                             to-secondary hover:scale-105 duration-200
                             text-white py-1 px-4 rounded-full'>Order Now
