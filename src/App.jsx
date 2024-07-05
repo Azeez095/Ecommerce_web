@@ -1,14 +1,25 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Products from './components/Products/Products'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 import TopProducts from './components/TopProducts/TopProducts'
-import Banner from "./components/Banner/Banner"
+import Banner from "./components/Banner/Banner";
+import Subscribe from "./components/Subscribe/Subscribe";
+import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer/Footer";
+import Popup from "./components/Popup/Popup";
+
 
 const App = () => {
-  React.useEffect(() => {
+
+    const [orderPopup, setOrderPopup] = useState(false);
+  
+    const handleOrderPopup = () => {
+      setOrderPopup(!orderPopup)
+    };
+  useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
@@ -25,6 +36,11 @@ const App = () => {
       <Products />
       <TopProducts />
       <Banner />
+      <Subscribe />
+      <Products />
+      <Testimonials />
+      <Footer />
+      <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup} />
     </div>
   )
 }

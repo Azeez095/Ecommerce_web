@@ -48,7 +48,7 @@ const TopProducts = () => {
                 md:grid-cols-3 md:gap-5 place-items-center gap-20">
                 {
                 ProductsData.map((data => (
-                    <div 
+                    <div key= {data.id}
                       data-aos="zoom-in"
                       className='
                       rounded-2xl bg-white dark:bg-gray-800

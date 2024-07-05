@@ -22,12 +22,12 @@ const Menu = [
     link: "/#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#",
   },
@@ -63,7 +63,7 @@ const Navbar = () => {
             className='font-bold text-2xl sm:text-3xl flex gap-2'
             >
               <img src={logo} alt="logo"  className='w-10'/>
-              Shopsy
+              Shoppy
             </a>
           </div>
           {/* search bar and order button */}
